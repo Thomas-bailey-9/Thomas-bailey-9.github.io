@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Winter, in a different shade — THOMAS / 01</title>
+  <meta name="description" content="THOMAS / 01, Blackberry + Vanilla: an interactive advert for a fictional sparkling drink, designed and built by Thomas Bailey.">
+  <meta name="theme-color" content="#F6F4F8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="THOMAS / 01 — Fictional beverage campaign">
+  <meta property="og:description" content="Winter, in a different shade. An interactive advert for a fictional sparkling drink by Thomas Bailey.">
+  <meta property="og:image" content="https://thomas-bailey-9.github.io/work/thomas-01/assets/images/social-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="THOMAS / 01 plum can beside the headline Winter, in a different shade.">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preload" href="assets/fonts/fraunces-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/images/thomas-01-can.webp" as="image" type="image/webp">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="advert" id="top">
+
+    <!-- ============ Story: scenes 1–5, one sticky stage, one continuous can ============ -->
+    <div class="story">
+
+      <div class="stage">
+        <div class="backdrop" aria-hidden="true">
+          <span class="bg bg--light"></span>
+          <span class="bg bg--lilac"></span>
+          <span class="bg bg--plum"></span>
+          <span class="bg bg--photo"></span>
+          <span class="bg bg--beam"></span>
+          <span class="bg bg--frost"></span>
+          <span class="bg bg--floor"></span>
+        </div>
+
+        <!-- Invisible keyframe positions (K2–K5), laid out per layout in styles.css. -->
+        <span class="slot slot--k2" aria-hidden="true"></span>
+        <span class="slot slot--k3" aria-hidden="true"></span>
+        <span class="slot slot--k4" aria-hidden="true"></span>
+        <span class="slot slot--k5" aria-hidden="true"></span>
+
+        <div class="can-rig">
+          <img class="can-img"
+               src="assets/images/thomas-01-can.webp"
+               width="598" height="1522"
+               alt="THOMAS / 01 can, Blackberry + Vanilla: deep plum with a lilac ribbon and ivory lettering, covered in condensation"
+               decoding="async" fetchpriority="high">
+        </div>
+      </div>
+
+      <!-- Scenes 1–2: Glimpse and Reveal -->
+      <section class="scene scene--opening" aria-labelledby="headline">
+        <div class="copy">
+          <h1 class="headline" id="headline" tabindex="-1">
+            <span class="headline__line">Winter, in a</span>
+            <span class="headline__line"><em>different shade.</em></span>
+          </h1>
+          <p class="flavour">
+            <span class="flavour__word flavour__word--first">Blackberry</span>
+            <span class="flavour__amp">+</span>
+            <span class="flavour__word flavour__word--second">Vanilla</span>
+          </p>
+          <span class="flavour__rule" aria-hidden="true"></span>
+        </div>
+        <p class="cue" aria-hidden="true">
+          <span class="cue__label">Scroll</span>
+          <span class="cue__line"></span>
+        </p>
+      </section>
+
+      <!-- Scene 3: Flavour contrast (decorative; the flavour is already in text above) -->
+      <div class="scene scene--flavour" aria-hidden="true">
+        <span class="bigword bigword--first">Blackberry</span>
+        <span class="bigword bigword--second">Vanilla</span>
+      </div>
+
+      <!-- Scene 4: Flavour direction -->
+      <section class="scene scene--taste" aria-labelledby="taste-title">
+        <div class="taste">
+          <h2 class="eyebrow eyebrow--light" id="taste-title">Flavour direction</h2>
+          <ol class="notes">
+            <li class="note note--1"><span class="note__index" aria-hidden="true">01</span><span class="note__text">Dark blackberry</span></li>
+            <li class="note note--2"><span class="note__index" aria-hidden="true">02</span><span class="note__text">Softened by vanilla</span></li>
+            <li class="note note--3"><span class="note__index" aria-hidden="true">03</span><span class="note__text">Cold and sparkling</span></li>
+          </ol>
+          <p class="taste__foot">A creative direction for a fictional drink, not a recipe or ingredient list. AI-generated image.</p>
+        </div>
+      </section>
+
+      <!-- Scene 5: The product -->
+      <section class="scene scene--select" aria-labelledby="product-name">
+        <div class="select-summary">
+          <p class="select-summary__name" id="product-name">THOMAS / 01</p>
+          <p class="select-summary__facts">Blackberry + Vanilla<br>Sparkling energy · 250 ml can design</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ Scene 6: The concept ============ -->
+    <section class="info concept" id="concept" aria-labelledby="concept-title">
+      <div class="info__inner">
+        <header class="concept__head">
+          <h2 class="eyebrow" id="concept-title">The concept</h2>
+          <p class="concept__lede">THOMAS / 01 is a fictional sparkling drink, created to show how one product can carry a seasonal story from first glance to final frame.</p>
+        </header>
+        <figure class="concept__photo">
+          <img src="assets/images/thomas-01-hand-winter-1536w.webp"
+               srcset="assets/images/thomas-01-hand-winter-960w.webp 960w, assets/images/thomas-01-hand-winter-1536w.webp 1536w"
+               sizes="(min-width: 960px) 52vw, 100vw"
+               width="1536" height="1024" loading="lazy" decoding="async"
+               alt="A hand in a cream knitted sleeve holds up the plum THOMAS / 01 can in a frosted meadow, with pale winter trees behind.">
+          <figcaption>AI-generated image.</figcaption>
+        </figure>
+        <dl class="concept__list">
+          <div class="concept__item">
+            <dt>Identity</dt>
+            <dd>An invented beverage brand with a quiet, spaced wordmark and a numbered first edition: 01.</dd>
+          </div>
+          <div class="concept__item">
+            <dt>Flavour direction</dt>
+            <dd>Blackberry and vanilla: a dark, fruity note softened by warm vanilla. It sets the colour and mood of the campaign rather than describing a real recipe.</dd>
+          </div>
+          <div class="concept__item">
+            <dt>Packaging</dt>
+            <dd>Deep plum with a soft lilac ribbon and warm ivory type, kept minimal so the colour does the work.</dd>
+          </div>
+          <div class="concept__item">
+            <dt>Interactive story</dt>
+            <dd>One can carries the whole scroll: a frosted opening, a shift from pale lilac to deep plum, and a still finale. It plays forwards and backwards, adapts to phones and desktops, and works with a keyboard and reduced motion.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ Coming soon: THOMAS / 02 (fictional, in development) ============ -->
+    <section class="next" id="next" aria-labelledby="next-title">
+      <div class="next__inner">
+        <figure class="next__can">
+          <img src="assets/images/thomas-02-can.webp" width="598" height="1521" loading="lazy" decoding="async"
+               alt="THOMAS / 02 can, Pear + Ginger: deep forest green with a pale green ribbon and ivory lettering, covered in condensation">
+        </figure>
+        <div class="next__copy">
+          <p class="next__eyebrow"><span class="next__dot" aria-hidden="true"></span>Coming soon</p>
+          <h2 class="next__title" id="next-title">THOMAS / 02</h2>
+          <p class="next__flavour">Pear + Ginger</p>
+          <p class="next__text">The next shade is in development: crisp pear warmed by a little ginger, in deep forest green.</p>
+          <p class="next__status">In development · Edition 02 of the series</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Scene 7: Closing ============ -->
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="closing__light" aria-hidden="true">
+        <span class="bg bg--frost"></span>
+        <span class="closing__facet closing__facet--a"></span>
+        <span class="closing__facet closing__facet--b"></span>
+      </div>
+      <h2 class="closing__headline" id="closing-title">
+        <span class="headline__line">Winter, in a</span>
+        <span class="headline__line"><em>different shade.</em></span>
+      </h2>
+      <div class="closing__can">
+        <img class="can-img" src="assets/images/thomas-01-can.webp" width="598" height="1522" alt="THOMAS / 01 can, Blackberry + Vanilla" loading="lazy" decoding="async">
+      </div>
+      <div class="closing__actions">
+        <a class="button explore" href="#concept">About the concept</a>
+        <a class="replay replay--link" href="#top">Replay</a>
+      </div>
+      <p class="closing__note">Fictional beverage brand. Packaging and interactive advert concept by Thomas Bailey. AI-generated product imagery. Not available for purchase.</p>
+    </section>
+  </main>
+  <script src="script.js" defer></script>
+  <script src="frost.js" defer></script>
+</body>
+</html>
