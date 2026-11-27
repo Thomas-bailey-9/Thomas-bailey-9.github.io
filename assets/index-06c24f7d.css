@@ -75,3 +75,19 @@
 .campaign .scrub__stage{box-shadow:none}
 @media (width<=760px){.campaign .campaign__tablist{grid-template-columns:1fr 1fr;gap:0 16px;border-bottom:0;display:grid}.campaign .campaign__tab{text-align:left;justify-content:flex-start;width:auto;border-bottom:1px solid #eee3d026;font-size:.98rem}.campaign .campaign__tab[aria-selected=true]{border-bottom:2px solid var(--clay)}
 .campaign .scrub__steps{grid-template-columns:repeat(4,minmax(0,1fr));gap:0 10px;border-top:0}.campaign .scrub__step{justify-content:flex-start;text-align:left;padding:10px 0}.campaign .scrub__time{text-align:left;font-size:.95rem}}
+/* ORVAN: plainer, work-led controls */
+.orvan .orvan__hint{display:none}
+.orvan .orvan__hero,.orvan .orvan__board-open{box-shadow:none}
+.orvan :is(.orvan__feature,.orvan__chip,.orvan__toggle,.orvan__step){isolation:auto;color:#15130fa6;background:none;border:0;border-radius:0;box-shadow:none;transition:color .2s,border-color .2s}
+.orvan :is(.orvan__feature,.orvan__chip,.orvan__toggle,.orvan__step):active{transform:none;box-shadow:none}
+@media (hover:hover) and (pointer:fine){.orvan :is(.orvan__feature,.orvan__chip,.orvan__toggle,.orvan__step):hover,.orvan :is(.orvan__feature,.orvan__chip)[aria-pressed=true]:hover{color:var(--ink);transform:none;box-shadow:none}}
+.orvan .orvan__feature-list{border-top:1px solid #15130f33;flex-direction:column;gap:0;display:flex}
+.orvan .orvan__feature{border-bottom:1px solid #15130f26;justify-content:flex-start;width:100%;min-height:46px;padding:10px 0;font:600 1rem/1.25 var(--font-body);letter-spacing:0;text-transform:none}
+.orvan .orvan__feature-num{color:var(--ov-forest);background:none;border:0;width:2.2em;height:auto;font:700 .85rem/1 var(--font-heading);letter-spacing:.06em;place-items:start;display:inline-block}
+.orvan .orvan__feature[aria-pressed=true]{color:var(--ink);background:none;border-bottom:2px solid var(--ov-forest);box-shadow:none}.orvan .orvan__feature[aria-pressed=true] .orvan__feature-num{color:var(--ov-forest);background:none}
+.orvan .orvan__switch{border-bottom:1px solid #15130f26;gap:24px}.orvan .orvan__chip{border-bottom:2px solid #0000;min-height:44px;margin-bottom:-1px;padding:0;font:600 1rem/1.2 var(--font-body);text-transform:none;letter-spacing:0}.orvan .orvan__chip[aria-pressed=true]{color:var(--ink);background:none;border-bottom-color:var(--ov-forest);box-shadow:none}
+.orvan .orvan__toggle{color:var(--ink);min-height:44px;padding:0;font:600 1rem/1.2 var(--font-body);text-transform:none;letter-spacing:0;text-decoration:underline;text-underline-offset:4px}
+.orvan .orvan__step{color:var(--ink);font:400 1.6rem/1 var(--font-body)}.orvan .orvan__step[aria-disabled=true]{opacity:.3}
+.orvan .orvan__spot{background:#f4f0e8;width:26px;height:26px;margin:-13px 0 0 -13px;font-size:.8rem;transition:background-color .2s,color .2s;box-shadow:0 0 0 1px #15130f}.orvan .orvan__spot:before{content:none;display:none}.orvan .orvan__spot[aria-pressed=true]{color:#f4f0e8;background:var(--ov-forest);box-shadow:0 0 0 1px #f4f0e8}
+@media (hover:hover) and (pointer:fine){.orvan .orvan__spot:hover{transform:none;background:#fff}.orvan .orvan__spot[aria-pressed=true]:hover{background:var(--ov-forest)}.orvan .orvan__poster-open:hover img{transform:none}}
+@media (width<=760px){.orvan .orvan__feature-list{border-top:0;grid-template-columns:repeat(5,minmax(0,1fr));gap:0 8px;display:grid}.orvan .orvan__feature{border-radius:0;justify-content:flex-start;min-height:44px;padding:8px 0}.orvan .orvan__feature-num{width:auto;font-size:1rem}.orvan .orvan__feature[aria-pressed=true] .orvan__feature-num{color:var(--ov-forest)}}
