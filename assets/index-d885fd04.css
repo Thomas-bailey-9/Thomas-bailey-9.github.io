@@ -91,3 +91,14 @@
 .orvan .orvan__spot{background:#f4f0e8;width:26px;height:26px;margin:-13px 0 0 -13px;font-size:.8rem;transition:background-color .2s,color .2s;box-shadow:0 0 0 1px #15130f}.orvan .orvan__spot:before{content:none;display:none}.orvan .orvan__spot[aria-pressed=true]{color:#f4f0e8;background:var(--ov-forest);box-shadow:0 0 0 1px #f4f0e8}
 @media (hover:hover) and (pointer:fine){.orvan .orvan__spot:hover{transform:none;background:#fff}.orvan .orvan__spot[aria-pressed=true]:hover{background:var(--ov-forest)}.orvan .orvan__poster-open:hover img{transform:none}}
 @media (width<=760px){.orvan .orvan__feature-list{border-top:0;grid-template-columns:repeat(5,minmax(0,1fr));gap:0 8px;display:grid}.orvan .orvan__feature{border-radius:0;justify-content:flex-start;min-height:44px;padding:8px 0}.orvan .orvan__feature-num{width:auto;font-size:1rem}.orvan .orvan__feature[aria-pressed=true] .orvan__feature-num{color:var(--ov-forest)}}
+/* Behind the mic: make Play read as a button */
+.pod__ep-row{grid-template-columns:3ch minmax(0,1fr) auto auto;transition:background-color .2s}
+.pod__ep-act{border:1.5px solid var(--desk-orange);color:var(--desk-orange);white-space:nowrap;border-radius:4px;justify-self:end;align-self:center;align-items:center;gap:8px;min-height:40px;padding:0 14px 0 12px;font:700 .95rem/1 var(--font-heading);letter-spacing:.08em;text-transform:uppercase;transition:background-color .2s,color .2s;display:inline-flex}
+.pod__ep-act:before{content:"";border-top:6px solid #0000;border-bottom:6px solid #0000;border-left:10px solid currentColor;width:0;height:0}
+.pod__ep.is-open .pod__ep-act{color:var(--night);background:var(--desk-orange)}
+.pod__ep.is-open .pod__ep-act:before{border:0;background:currentColor;width:10px;height:10px}
+.pod__ep.is-open .pod__ep-row{background:#f4793a12}
+.pod__ep-row:active .pod__ep-act{transform:translateY(1px)}
+@media (hover:hover) and (pointer:fine){.pod__ep-row:hover{background:#f4f0e80a}.pod__ep-row:hover .pod__ep-act{color:var(--night);background:var(--desk-orange)}}
+.pod__ep-row:focus-visible .pod__ep-act{outline:2px solid var(--paper);outline-offset:2px}
+@media (width<=760px){.pod__ep-row{grid-template-columns:3ch minmax(0,1fr) auto;padding:16px 0}.pod__ep-act{grid-row:1/span 2;grid-column:3;min-height:44px;padding:0 12px 0 10px}}
