@@ -57,3 +57,21 @@
 @media (width<=760px){.football .football__tablist{grid-template-columns:1fr 1fr;gap:0 16px;border-bottom:0;display:grid}.football .football__tab{text-align:left;justify-content:flex-start;white-space:normal;border-bottom:1px solid #15130f26;min-height:48px;font-size:.98rem}.football .football__tab[aria-selected=true]{border-bottom:2px solid var(--poster-claret)}
 .football .football__switch{gap:0 20px;margin-bottom:14px}.football .football__switch:before{content:none;display:none}.football .football__chip{flex:none;min-height:44px;font-size:.92rem;line-height:1.2;text-align:left}.football .football__chip[aria-pressed=true]{background:none;color:var(--ink);border-bottom-color:var(--ink)}}
 @media (width<=760px){.football .football__switch{flex-wrap:nowrap;align-items:stretch;gap:0 14px;border-bottom:1px solid #15130f26}.football .football__chip{flex:1 1 0;min-width:0;white-space:normal;font-size:.88rem;margin-bottom:-1px;padding:6px 0}}
+/* Boot campaign: plainer, work-led controls */
+.campaign .campaign__tabs:before,.campaign .scrub__side:before{content:none;display:none}
+.campaign .campaign__tabs{border-top:2px solid var(--bone);padding-top:0}
+.campaign .campaign__tablist{border-bottom:1px solid #eee3d033;flex-wrap:wrap;gap:0 28px;padding:0;display:flex}
+.campaign .campaign__tab,.campaign .scrub__step{isolation:auto;color:var(--bone-soft);background:none;border:0;border-bottom:2px solid #0000;border-radius:0;box-shadow:none;transition:color .2s,border-color .2s}
+.campaign .campaign__tab:before,.campaign .scrub__step:before,.campaign .scrub__step:after{content:none;display:none}
+.campaign .campaign__tab{min-height:48px;margin-bottom:-1px;padding:0;font:600 1rem/1.2 var(--font-body);letter-spacing:0;text-transform:none}
+.campaign .campaign__tab[aria-selected=true]{color:var(--bone);background:none;border-bottom-color:var(--clay);box-shadow:none}
+.campaign .scrub__steps{border-top:1px solid #eee3d033;gap:0;grid-template-columns:1fr 1fr}
+.campaign .scrub__step{border-bottom:1px solid #eee3d026;min-height:48px;padding:10px 0;gap:2px}
+.campaign .scrub__step[aria-pressed=true]{color:var(--bone);background:none;border-bottom:2px solid var(--clay);box-shadow:none}
+.campaign .scrub__step[aria-pressed=true] .scrub__time{color:var(--clay)}
+.campaign .scrub__name{font:600 .98rem/1.2 var(--font-body);text-transform:none}
+.campaign :is(.campaign__tab,.scrub__step):active{transform:none;box-shadow:none}
+@media (hover:hover) and (pointer:fine){.campaign :is(.campaign__tab,.scrub__step):hover,.campaign :is(.campaign__tab,.scrub__step)[aria-pressed=true]:hover,.campaign .campaign__tab[aria-selected=true]:hover{color:var(--bone);transform:none;box-shadow:none}}
+.campaign .scrub__stage{box-shadow:none}
+@media (width<=760px){.campaign .campaign__tablist{grid-template-columns:1fr 1fr;gap:0 16px;border-bottom:0;display:grid}.campaign .campaign__tab{text-align:left;justify-content:flex-start;width:auto;border-bottom:1px solid #eee3d026;font-size:.98rem}.campaign .campaign__tab[aria-selected=true]{border-bottom:2px solid var(--clay)}
+.campaign .scrub__steps{grid-template-columns:repeat(4,minmax(0,1fr));gap:0 10px;border-top:0}.campaign .scrub__step{justify-content:flex-start;text-align:left;padding:10px 0}.campaign .scrub__time{text-align:left;font-size:.95rem}}
