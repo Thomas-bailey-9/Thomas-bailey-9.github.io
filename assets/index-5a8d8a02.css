@@ -102,3 +102,15 @@
 @media (hover:hover) and (pointer:fine){.pod__ep-row:hover{background:#f4f0e80a}.pod__ep-row:hover .pod__ep-act{color:var(--night);background:var(--desk-orange)}}
 .pod__ep-row:focus-visible .pod__ep-act{outline:2px solid var(--paper);outline-offset:2px}
 @media (width<=760px){.pod__ep-row{grid-template-columns:3ch minmax(0,1fr) auto;padding:16px 0}.pod__ep-act{grid-row:1/span 2;grid-column:3;min-height:44px;padding:0 12px 0 10px}}
+/* Roaring Times: make the Reading one page points read as buttons */
+.magazine .read__trigger,.magazine .read__trigger[data-on]{cursor:pointer;grid-template-columns:2.4rem minmax(0,1fr) auto;grid-template-areas:"num name act""num text act";column-gap:12px;padding:14px 4px 14px 0;transition:background-color .2s}
+.magazine .read__trigger:before{content:none;display:none}
+.magazine .read__trigger:after{content:"▸ Show";grid-area:act;align-self:center;white-space:nowrap;color:var(--cover-blue);border:1.5px solid var(--cover-blue);border-radius:4px;align-items:center;min-height:40px;padding:0 12px;font:700 .9rem/1 var(--font-heading);letter-spacing:.08em;text-transform:uppercase;transition:background-color .2s,color .2s;display:inline-flex}
+.magazine .read__trigger[data-on]:after{content:"● Showing";color:#fff;background:var(--cover-blue)}
+.magazine .read__trigger[data-on]{background:#2a3b940f}
+.magazine .read__num{grid-area:num;color:var(--cover-blue);border:1.5px solid var(--cover-blue);border-radius:4px;place-items:center;align-self:start;width:2rem;height:2rem;font-weight:700;display:grid}
+.magazine .read__trigger[data-on] .read__num{color:#fff;background:var(--cover-blue)}
+.magazine .read__trigger:active:after{transform:translateY(1px)}
+.magazine .read__trigger:focus-visible{outline:2px solid var(--cover-blue);outline-offset:2px}
+@media (hover:hover) and (pointer:fine){.magazine .read__trigger:hover{background:#2a3b940a}.magazine .read__trigger:hover:after{color:#fff;background:var(--cover-blue)}.magazine .read__trigger:hover .read__name{text-decoration:underline;text-underline-offset:4px}}
+@media (width<=760px){.magazine .read__trigger,.magazine .read__trigger[data-on]{column-gap:10px}.magazine .read__trigger:after{min-height:44px;padding:0 10px}}
