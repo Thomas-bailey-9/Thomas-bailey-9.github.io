@@ -114,3 +114,15 @@
 .magazine .read__trigger:focus-visible{outline:2px solid var(--cover-blue);outline-offset:2px}
 @media (hover:hover) and (pointer:fine){.magazine .read__trigger:hover{background:#2a3b940a}.magazine .read__trigger:hover:after{color:#fff;background:var(--cover-blue)}.magazine .read__trigger:hover .read__name{text-decoration:underline;text-underline-offset:4px}}
 @media (width<=760px){.magazine .read__trigger,.magazine .read__trigger[data-on]{column-gap:10px}.magazine .read__trigger:after{min-height:44px;padding:0 10px}}
+/* Football editorial: tabs and poster choices read as buttons */
+.football .football__tablist{border-bottom:0;gap:8px;padding-top:16px}
+.football .football__tab{color:var(--poster-claret);border:1.5px solid var(--poster-claret);border-radius:4px;align-items:center;gap:8px;min-height:44px;margin:0;padding:8px 14px;font:600 .98rem/1.2 var(--font-body);text-align:left;transition:background-color .2s,color .2s;display:inline-flex}
+.football .football__tab:after{content:"›";font-size:1.2em;line-height:1}
+.football .football__tab[aria-selected=true]{color:#fff;background:var(--poster-claret);border-color:var(--poster-claret)}
+.football .football__tab[aria-selected=true]:after{content:"●";font-size:.6em}
+.football .football__switch{border-bottom:0;gap:8px}
+.football .football__chip{color:var(--ink);border:1.5px solid var(--ink);border-radius:4px;align-items:center;justify-content:center;gap:6px;min-height:44px;margin:0;padding:8px 10px;font:600 .9rem/1.2 var(--font-body);text-align:center;transition:background-color .2s,color .2s;display:inline-flex}
+.football .football__chip[aria-pressed=true]{color:var(--paper);background:var(--ink);border-color:var(--ink)}
+.football :is(.football__tab,.football__chip):active{transform:translateY(1px)}
+@media (hover:hover) and (pointer:fine){.football .football__tab:hover{color:#fff;background:var(--poster-claret)}.football .football__tab[aria-selected=true]:hover{color:#fff;background:var(--poster-claret)}}
+@media (width<=760px){.football .football__tablist{grid-template-columns:1fr 1fr;gap:8px;display:grid}.football .football__tab,.football .football__tab[aria-selected=true]{border-bottom-width:1.5px;justify-content:space-between;width:100%;min-height:52px}.football .football__switch{display:flex}.football .football__chip{flex:1 1 0}}
