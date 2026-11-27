@@ -143,3 +143,18 @@
 @media (hover:hover) and (pointer:fine){.campaign .campaign__tab:hover,.campaign .campaign__tab[aria-selected=true]:hover{color:var(--studio);background:var(--clay)}.campaign .scrub__step:hover{border-color:var(--clay);color:var(--bone)}.campaign .scrub__step[aria-pressed=true]:hover{color:var(--studio)}}
 @media (width<=760px){.campaign .campaign__tablist{grid-template-columns:1fr 1fr;gap:8px;display:grid}.campaign .campaign__tab,.campaign .campaign__tab[aria-selected=true]{justify-content:space-between;width:100%;min-height:52px;border-bottom-width:1.5px}
 .campaign .scrub__steps{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.campaign .scrub__step{grid-template-columns:1fr;grid-template-areas:"icon""time";justify-items:center;row-gap:6px;padding:10px 4px}.campaign .scrub__time{text-align:center}}
+/* Pitchside Motion: flat, obvious controls */
+.pitchside .pm-stage{border-radius:4px;box-shadow:0 0 0 1px #f4f0e81f}
+.pitchside .pm-selector__list{border:1px solid #f4f0e833;border-radius:4px;gap:4px;padding:4px}
+.pitchside .pm-selector__item{border:1.5px solid #f4f0e84d;border-radius:4px;font:600 .98rem/1.2 var(--font-body);letter-spacing:0;text-transform:none}
+.pitchside .pm-selector__number{font:700 .8rem/1 var(--font-heading);letter-spacing:.08em}
+.pitchside .pm-selector__item[aria-pressed=true]{border-color:var(--pm-ink)}
+.pitchside .pm-selector__item:disabled{border-style:dashed;border-color:#f4f0e82e}
+.pitchside .pm-selector__step{background:none;border:1.5px solid #f4f0e880;border-radius:4px;box-shadow:none;transition:background-color .2s,color .2s}
+.pitchside .pm-button,.pitchside .pm-segmented button{border-radius:4px;box-shadow:none;background:none;font:600 .98rem/1.2 var(--font-body);letter-spacing:0;text-transform:none}
+.pitchside .pm-button{border:1.5px solid #f4f0e880}
+.pitchside .pm-button--primary{color:var(--paper);background:#c8102e;border-color:#c8102e}
+.pitchside .pm-segmented{border:1.5px solid #f4f0e84d;border-radius:4px;gap:4px;padding:4px}
+.pitchside .pm-segmented button{border:0}
+.pitchside .pm-segmented button[aria-pressed=true]{background:var(--pm-ink);color:#0e1015}
+@media (hover:hover) and (pointer:fine){.pitchside .pm-selector__step:hover,.pitchside .pm-button:not(.pm-button--primary):hover{background:#f4f0e81a;border-color:var(--pm-ink)}.pitchside .pm-button--primary:hover{background:#a50d26;border-color:#a50d26}.pitchside .pm-segmented button:not([aria-pressed=true]):hover{background:#f4f0e814}.pitchside .pm-selector__item:not(:disabled):not([aria-pressed=true]):hover{border-color:var(--pm-ink);background:#f4f0e81a}}
