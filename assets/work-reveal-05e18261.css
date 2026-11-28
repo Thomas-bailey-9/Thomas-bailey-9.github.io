@@ -1,0 +1,13 @@
+/* Selected work: scroll-controlled project reveal (Animation 01). See work-reveal.js. */
+.contents__pin[data-reveal]::after { content: ''; display: block; height: var(--wr-run, 0px); }
+.contents__pin[data-reveal] > .contents__list { position: sticky; top: var(--wr-top, 76px); }
+.contents__list[data-reveal="run"] { overflow: hidden; overflow: clip; }
+.contents__list[data-reveal="run"] > li { transform-origin: 0 0; }
+.contents__list[data-reveal="run"][data-reveal-moving] > li { will-change: transform; }
+.contents__list[data-reveal="run"] .entry { pointer-events: none; }
+.contents__list[data-reveal="run"] :is(.entry__copy, .entry__number, .entry__open) { opacity: var(--wr-copy, 0); }
+.contents__list[data-reveal="run"] [data-reveal-hero] .entry__media { border-radius: var(--wr-radius, 16px); box-shadow: none; }
+@media (prefers-reduced-motion: reduce) {
+  .contents__pin[data-reveal]::after { display: none; }
+  .contents__pin[data-reveal] > .contents__list { position: static; }
+}
